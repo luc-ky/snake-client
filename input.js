@@ -1,4 +1,3 @@
-const { connect } = require('./client');
 let connection;
 
 const setupInput = (conn) => {
@@ -26,6 +25,18 @@ const handleUserInput = function(key) {
   }
   if (key === 'd') {
     connection.write('Move: right');
+  }
+  if (key === '1') {
+    connection.write('Say: Emote');
+  }
+  if (key === '2') {
+    connection.write('Say: Dance');
+  }
+  if (key === '3') {
+    connection.write('Say: Point');
+  }
+  if (key === '4') {
+    connection.write('Say: Wave');
   }
 };
 
